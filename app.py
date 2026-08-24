@@ -9,7 +9,7 @@ st.write(number1,number2)
 
 option=st.selectbox(
     "Choose the Operation",
-    ("Addition","Subtraction"),
+    ("Addition","Subtraction","Multiplication","Division"),
     placeholder="Select the operation"
 )
 
@@ -17,5 +17,8 @@ if st.button("Calculate"):
     if option=="Addition":
         st.write("Sum of ",number1,number2,"is",number1+number2)
     elif option=="Subtraction":
-            st.write("Difference of ",number1,number2,"is",number1-number2)
-    #st.balloons()
+        st.write("Difference of ",number1,number2,"is",number1-number2)
+    elif option=="Multiplication":
+        st.write("Multiplication of ",number1,number2,"is",number1*number2)
+    elif option=="Multiplication":
+        st.write("Division of ",number1,number2,"is",number1/number2)
